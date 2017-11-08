@@ -1,0 +1,42 @@
+class Student:
+    stuCount = 0
+
+    def __init__(self,name,stu_no,class_no,gender):
+        self.name=name
+        self.stu_no=stu_no
+        self.class_no=class_no
+        self.gender=gender
+        Student.stuCount +=1
+
+    def study(self):
+        print"Student can study"
+
+    def getStuCount(self):
+        return Student.stuCount
+
+
+class PrinaryStudent(Student):
+    prinaryStucount=0
+
+    def canRecute(self):
+        print "Prinary Student can recite"
+
+    def canOral(self):
+        print "Prinary Student can oral"
+
+class MiddleStudent(Student):
+    middleStuCount = 0
+
+    def __init__(self,name,stu_no,class_no,gender):
+        self.name=name
+        self.stu_no=stu_no
+        self.class_no=class_no
+        self.gender=gender
+        Student.MiddleStuCount +=1
+
+    def canChemistry(self):
+        print "middle Student can Chenistry"
+
+    def canPyhics(self):
+        print "middle Student can Physics"
+
