@@ -1,0 +1,24 @@
+蟒2.7 0.13（v2.7.13：a06454b1afa1，十二月17  2016年，20：42：59）[ MSC v.1500 32位（英特尔）]在Win32
+输入“ copyright ”，“ credits ” 或 “ license（）” 以获取更多信息。
+>> > ÿ = ' 123 @ qq.comaaa @ 163.combbb @ 126.comasdfasfs33333 @ adfcom '
+>> >  进口重
+>> >   re.findall（' \ W + @ \ W + \。com '，y）的
+ 
+  文件“ <pyshell＃2> ”，第2行
+    re.findall（' \ w + @ \ w + \。com '，y）
+    ^
+IndentationError：意外的缩进
+>> > re.findall（' \ W + @ \ W + \。com '，y）的
+[ ' 123@qq.com '，' aaa@163.com '，' bbb@126.com ' ]
+>> > ÿ =  '电话：010-12345678地址：changanRoad '
+>> > re.findall（' \ d {3} - \ d {8} '，y）的
+[ ' 010-12345678 ' ]
+>> > ÿ =  '电话：010-12345678地址：changanRoad其他高大：1054-98765432 '
+>> > re.findall（' \ d {3,4} - \ d {7,8} '，y）的
+[ ' 010-12345678 '，' 1054-98765432 ' ]
+>> > ÿ = ' 123 @ qq.comaaa @ 163.combbb @ 126.comasdfasfs33333 @ adfcom '
+>> > re.findall（' \ W @（?: QQ | 163 | 126）.COM '，y）的
+[ ' 3@qq.com '，' a@163.com '，' b@126.com ' ]
+>> > re.findall（' \ W + @（?: QQ | 163 | 126）.COM '，y）的
+[ ' 123@qq.com '，' aaa@163.com '，' bbb@126.com ' ]
+>> > 
